@@ -7,4 +7,6 @@ def collatz_stopping_time(n):
             n = 3 * n + 1
         steps += 1
     return steps
-    print(f"{i}: {collatz_stopping_time(i)}")
+
+for i in range(1, 1001):
+    print(collatz_stopping_time(i))
